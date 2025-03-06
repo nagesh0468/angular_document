@@ -42,15 +42,18 @@ ng serve</code></pre>
   <h1>Learning Angular</h1>
   <h2>Components and Data Binding</h2>
 
-  <p>In an Angular project, your main code is inside the <strong>app</strong> folder. This folder contains HTML, CSS, and TypeScript files for your components.</p>
+  <p>In an Angular project, your main code is inside the <strong>app</strong> folder. This folder contains HTML, CSS,
+    and TypeScript files for your components.</p>
 
-  <p>To display a simple message, open the HTML file of your component (e.g., <code>app.component.html</code>) and add this line:</p>
+  <p>To display a simple message, open the HTML file of your component (e.g., <code>app.component.html</code>) and add
+    this line:</p>
   <pre><code>&lt;h1&gt;Welcome to Angular&lt;/h1&gt;</code></pre>
 
   <p>Now, run your Angular app using:</p>
   <pre><code>ng serve</code></pre>
 
-  <p>Open your browser and go to <code>http://localhost:4200/</code>. You should see <strong>"Welcome to Angular"</strong> displayed on the page!</p>
+  <p>Open your browser and go to <code>http://localhost:4200/</code>. You should see <strong>"Welcome to
+      Angular"</strong> displayed on the page!</p>
 
   <p><strong>I think you are so happy to see this welcome 😁!</strong></p>
 
@@ -61,7 +64,8 @@ ng serve</code></pre>
   <h1>Learning Angular</h1>
   <h2>Successful Data Binding</h2>
 
-  <p>Now that you've displayed a simple message, let's take it a step further by using <strong>data binding</strong> in Angular!</p>
+  <p>Now that you've displayed a simple message, let's take it a step further by using <strong>data binding</strong> in
+    Angular!</p>
 
   <p>Open your TypeScript file (e.g., <code>app.component.ts</code>) and define a variable:</p>
   <pre><code>export class AppComponent &#123;
@@ -78,7 +82,8 @@ ng serve</code></pre>
 
   <pre><code>&lt;h1&gt;Welcome to Angular!&lt;/h1&gt;</code></pre>
 
-  <p><strong>Congratulations! You've successfully used data binding in Angular! 🎉 I bet this feels amazing! 😁</strong></p>
+  <p><strong>Congratulations! You've successfully used data binding in Angular! 🎉 I bet this feels amazing! 😁</strong>
+  </p>
 
   <p>Stay excited—there’s so much more to explore in Angular! 🚀</p>
 </div>
@@ -88,7 +93,8 @@ ng serve</code></pre>
   <h1>Learning Angular</h1>
   <h2>Successful Data Binding</h2>
 
-  <p>Now that you've displayed a simple message, let's take it a step further by using <strong>data binding</strong> in Angular!</p>
+  <p>Now that you've displayed a simple message, let's take it a step further by using <strong>data binding</strong> in
+    Angular!</p>
 
   <p>Open your TypeScript file (e.g., <code>app.component.ts</code>) and define a variable:</p>
   <pre><code>export class AppComponent &#123;
@@ -117,13 +123,14 @@ ng serve</code></pre>
 
   Welcome to Angular! <br>
 
-[Angular Logo Image] <br>
+  [Angular Logo Image] <br>
 
-This text has dynamic styling! <br>
+  This text has dynamic styling! <br>
 
-Today's Date: Mon Mar 06 2025 <br>
+  Today's Date: Mon Mar 06 2025 <br>
 
-  <p><strong>Congratulations! Now you know how to bind text, images, styles, and even dates dynamically in Angular! 🎉😁</strong></p>
+  <p><strong>Congratulations! Now you know how to bind text, images, styles, and even dates dynamically in Angular!
+      🎉😁</strong></p>
 
   <p>Stay excited—there’s so much more to explore in Angular! 🚀</p>
 </div>
@@ -132,7 +139,8 @@ Today's Date: Mon Mar 06 2025 <br>
   <h1>Learning Angular</h1>
   <h2>Property, Class, and Style Binding in Angular</h2>
 
-  <p>Now that you've learned about text interpolation, let's explore <strong>binding attributes dynamically</strong> using:</p>
+  <p>Now that you've learned about text interpolation, let's explore <strong>binding attributes dynamically</strong>
+    using:</p>
   <ul>
     <li><strong>Property Binding</strong> – for setting element attributes dynamically</li>
     <li><strong>Class Binding</strong> – for dynamically applying CSS classes</li>
@@ -207,10 +215,12 @@ Today's Date: Mon Mar 06 2025 <br>
   <h1>Learning Angular</h1>
   <h2>Event Binding in Angular</h2>
 
-  <p>Now that you've learned about property, class, and style binding, let's explore <strong>Event Binding</strong> in Angular.</p>
+  <p>Now that you've learned about property, class, and style binding, let's explore <strong>Event Binding</strong> in
+    Angular.</p>
 
   <p><strong>What is Event Binding?</strong></p>
-  <p>Event binding allows us to handle user actions (like clicks, key presses, mouse movements) by binding them to functions in our TypeScript file.</p>
+  <p>Event binding allows us to handle user actions (like clicks, key presses, mouse movements) by binding them to
+    functions in our TypeScript file.</p>
 
   <p>### 1️⃣ Setup in TypeScript File (<code>app.component.ts</code>)</p>
 
@@ -264,6 +274,114 @@ Today's Date: Mon Mar 06 2025 <br>
 
   <p>🔥 <strong>You’re mastering Angular! Keep going, and soon you'll build amazing interactive apps! 🚀😁</strong></p>
 </div>
+
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Two-Way Data Binding in Angular</h2>
+
+  <p>Now that you've learned about **Property Binding** and **Event Binding**, let's explore <strong>Two-Way Data
+      Binding</strong> in Angular.</p>
+
+  <p><strong>What is Two-Way Data Binding?</strong></p>
+  <p>Two-way data binding keeps the data in sync between the **input field** and the **component variable**
+    automatically. Any changes in the input field will instantly reflect in the variable and vice versa.</p>
+
+  <p>### 1️⃣ Install FormsModule</p>
+  <p>To use two-way data binding, you need to import the **FormsModule** in your app module.</p>
+
+  <p>Open <code>app.module.ts</code> and add this line:</p>
+
+  <pre><code>import &#123; FormsModule &#125; from '&#64;angular/forms';</code></pre>
+
+  <p>Then, add it to the <code>&#64;NgModule</code> imports:</p>
+
+  <pre><code>&#64;NgModule(&#123;
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule], // Import FormsModule here
+  providers: [],
+  bootstrap: [AppComponent]
+&#125;)</code></pre>
+
+  <p>### 2️⃣ Setup in TypeScript File (<code>app.component.ts</code>)</p>
+
+  <pre><code>export class AppComponent &#123;
+    userName = 'Angular Learner 😃';
+  &#125;</code></pre>
+
+  <p>### 3️⃣ Update the HTML File (<code>app.component.html</code>)</p>
+
+  <p>Now, let’s bind the input field with the **userName** variable using <strong>ngModel</strong>:</p>
+
+  <pre><code ngNonBindable>
+&lt;h1&gt;Hello, {{ userName }}!&lt;/h1&gt;
+
+&lt;!-- Two-Way Data Binding using ngModel --&gt;
+&lt;input type="text" [(ngModel)]="userName"&gt;
+</code></pre>
+
+  <p>### 4️⃣ Run Your Angular App</p>
+  <pre><code>ng serve</code></pre>
+
+  <p>Now, open <code>http://localhost:4200/</code> in your browser.</p>
+
+  <h2>🎉 Browser Output</h2>
+
+  <p><strong>Before Typing Anything:</strong></p>
+
+  <div class="browser-output">
+    <h1>Hello, Angular Learner 😃!</h1>
+    <input type="text" value="Angular Learner 😃">
+  </div>
+
+  <p><strong>After Changing the Input Field:</strong></p>
+
+  <div class="browser-output">
+    <h1>Hello, John Doe!</h1>
+    <input type="text" value="John Doe">
+  </div>
+
+  <p><strong>OH WOW! 😃 As you type in the input box, the text updates instantly! That’s two-way data binding in action!
+      🎉</strong></p>
+
+  <p>Now, you’ve successfully used:</p>
+  <ul>
+    <li><strong>FormsModule</strong> for two-way binding</li>
+    <li><strong>ngModel</strong> to sync data automatically</li>
+    <li><strong>Text Interpolation</strong> to reflect changes in real-time</li>
+  </ul>
+
+  <p>🔥 <strong>You’re getting better at Angular! Keep experimenting and build awesome dynamic forms! 🚀😁</strong></p>
+</div>
+
+<div class="container">
+  <h1>Angular Directives</h1>
+  <h2>Directives and Their Types in Angular</h2>
+
+  <p>
+    Now that you've learned about event binding, let's dive into one of the most powerful features of Angular —
+    <strong>Directives</strong>!
+  </p>
+
+  <p><strong>What are Directives?</strong></p>
+  <p>Directives in Angular allow you to modify the structure, appearance, and behavior of elements dynamically.</p>
+
+  <h2>✨ Types of Directives in Angular</h2>
+  <ul>
+    <li><strong>Component Directives:</strong> The most common directive type. Every Angular component is technically a
+      directive with a template.</li>
+    <li><strong>Structural Directives:</strong> Used to add, remove, or manipulate elements in the DOM (e.g.,
+      <code>*ngIf</code>, <code>*ngFor</code>, <code>*ngSwitch</code>).
+    </li>
+    <li><strong>Attribute Directives:</strong> Used to change the appearance or behavior of an element (e.g.,
+      <code>[ngClass]</code>, <code>[ngStyle]</code>).
+    </li>
+  </ul>
+
+  
+</div>
+
+  
+   
 
 
 <router-outlet />

@@ -41,3 +41,35 @@ pre{
   color: red;
   font-weight: bold;
 }
+button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+.highlight {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f3f3f3;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+}

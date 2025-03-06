@@ -1,0 +1,269 @@
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Basic Setup for Angular</h2>
+
+  <p><strong>1. Install Node.js</strong></p>
+  <p>
+    First, install Node.js from the
+    <a href="https://nodejs.org/" target="_blank">official website</a>.
+  </p>
+
+  <p><strong>2. Install Angular CLI</strong></p>
+  <p>After installing Node.js, install Angular CLI globally using the command:</p>
+  <pre><code>npm install -g &#64;angular/cli</code></pre>
+
+  <p><strong>3. Verify Installation</strong></p>
+  <p>Check if Angular CLI is installed correctly by running:</p>
+  <pre><code>ng version</code></pre>
+  <p>If the installation was successful, it will display the Angular CLI version.</p>
+
+  <p><strong>4. Create a New Angular Project</strong></p>
+  <p>Run the following command to create a new Angular app:</p>
+  <pre><code>ng new app-name</code></pre>
+  <p>Replace <code>app-name</code> with your preferred project name.</p>
+
+  <p><strong>5. Run the Angular App</strong></p>
+  <p>Navigate to your project folder and start the development server:</p>
+  <pre><code>cd app-name
+ng serve</code></pre>
+  <p>This will start your application, and you can access it in your browser at <code>http://localhost:4200/</code>.</p>
+
+  <p><strong>6. Need Help?</strong></p>
+  <p>
+    For more details, check out the
+    <a href="https://angular.io/guide" target="_blank">official Angular guide</a>.
+  </p>
+  <p>If you face any issues, feel free to ask for help.</p>
+
+  <p><strong>Happy Coding! 🚀</strong></p>
+</div>
+
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Components and Data Binding</h2>
+
+  <p>In an Angular project, your main code is inside the <strong>app</strong> folder. This folder contains HTML, CSS, and TypeScript files for your components.</p>
+
+  <p>To display a simple message, open the HTML file of your component (e.g., <code>app.component.html</code>) and add this line:</p>
+  <pre><code>&lt;h1&gt;Welcome to Angular&lt;/h1&gt;</code></pre>
+
+  <p>Now, run your Angular app using:</p>
+  <pre><code>ng serve</code></pre>
+
+  <p>Open your browser and go to <code>http://localhost:4200/</code>. You should see <strong>"Welcome to Angular"</strong> displayed on the page!</p>
+
+  <p><strong>I think you are so happy to see this welcome 😁!</strong></p>
+
+  <p>That's how simple it is to work with Angular components and templates.</p>
+</div>
+
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Successful Data Binding</h2>
+
+  <p>Now that you've displayed a simple message, let's take it a step further by using <strong>data binding</strong> in Angular!</p>
+
+  <p>Open your TypeScript file (e.g., <code>app.component.ts</code>) and define a variable:</p>
+  <pre><code>export class AppComponent &#123;
+    message = 'Welcome to Angular!';
+  &#125;</code></pre>
+
+  <p>Next, update your HTML file (<code>app.component.html</code>) to display this message dynamically:</p>
+  <pre><code ngNonBindable>&lt;h1&gt;{{ message }}&lt;/h1&gt;</code></pre>
+
+  <p>Run your Angular app again:</p>
+  <pre><code>ng serve</code></pre>
+
+  <p>When you open <code>http://localhost:4200/</code>, the browser will display:</p>
+
+  <pre><code>&lt;h1&gt;Welcome to Angular!&lt;/h1&gt;</code></pre>
+
+  <p><strong>Congratulations! You've successfully used data binding in Angular! 🎉 I bet this feels amazing! 😁</strong></p>
+
+  <p>Stay excited—there’s so much more to explore in Angular! 🚀</p>
+</div>
+
+
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Successful Data Binding</h2>
+
+  <p>Now that you've displayed a simple message, let's take it a step further by using <strong>data binding</strong> in Angular!</p>
+
+  <p>Open your TypeScript file (e.g., <code>app.component.ts</code>) and define a variable:</p>
+  <pre><code>export class AppComponent &#123;
+    message = 'Welcome to Angular!';
+    imagePath = 'assets/angular-logo.png';
+    style = 'highlight';
+    currentDate = new Date().toDateString();
+  &#125;</code></pre>
+
+  <p>Next, update your HTML file (<code>app.component.html</code>) to display this message dynamically:</p>
+  <pre><code ngNonBindable>&lt;h1&gt;{{ message }}&lt;/h1&gt;</code></pre>
+
+  <p>Adding an image dynamically:</p>
+  <pre><code ngNonBindable>&lt;img src="{{ imagePath }}" alt="Angular Logo"&gt;</code></pre>
+
+  <p>Binding a CSS class dynamically:</p>
+  <pre><code ngNonBindable>&lt;p class="{{ style }}"&gt;This text has dynamic styling!&lt;/p&gt;</code></pre>
+
+  <p>Displaying the current date:</p>
+  <pre><code ngNonBindable>&lt;p&gt;Today's Date: {{ currentDate }}&lt;/p&gt;</code></pre>
+
+  <p>Run your Angular app again:</p>
+  <pre><code>ng serve</code></pre>
+
+  <p>When you open <code>http://localhost:4200/</code>, the browser will display:</p>
+
+  Welcome to Angular! <br>
+
+[Angular Logo Image] <br>
+
+This text has dynamic styling! <br>
+
+Today's Date: Mon Mar 06 2025 <br>
+
+  <p><strong>Congratulations! Now you know how to bind text, images, styles, and even dates dynamically in Angular! 🎉😁</strong></p>
+
+  <p>Stay excited—there’s so much more to explore in Angular! 🚀</p>
+</div>
+
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Property, Class, and Style Binding in Angular</h2>
+
+  <p>Now that you've learned about text interpolation, let's explore <strong>binding attributes dynamically</strong> using:</p>
+  <ul>
+    <li><strong>Property Binding</strong> – for setting element attributes dynamically</li>
+    <li><strong>Class Binding</strong> – for dynamically applying CSS classes</li>
+    <li><strong>Style Binding</strong> – for dynamically setting styles</li>
+  </ul>
+
+  <p>### 1️⃣ Setup in TypeScript File (<code>app.component.ts</code>)</p>
+
+  <pre><code>export class AppComponent &#123;
+    message = 'Welcome to Angular!';
+    imagePath = 'assets/angular-logo.png'; // Property binding
+    styleClass = 'highlight'; // Class binding
+    textColor = 'blue'; // Style binding (dynamic text color)
+    bgColor = 'lightgray'; // Style binding (background color)
+    currentDate = new Date().toDateString(); // Display current date
+  &#125;</code></pre>
+
+  <p>### 2️⃣ Update the HTML File (<code>app.component.html</code>)</p>
+
+  <p>Now, let's dynamically bind properties, classes, and styles:</p>
+
+  <pre><code ngNonBindable>
+&lt;h1&gt;{{ message }}&lt;/h1&gt;
+
+&lt;!-- Property Binding for Image --&gt;
+&lt;img [src]="imagePath" alt="Angular Logo"&gt;
+
+&lt;!-- Class Binding --&gt;
+&lt;p [class]="styleClass"&gt;This text has dynamic styling!&lt;/p&gt;
+
+&lt;!-- Style Binding --&gt;
+&lt;p [style.color]="textColor" [style.backgroundColor]="bgColor"&gt;
+  This text has a dynamically applied color and background!
+&lt;/p&gt;
+
+&lt;!-- Date Binding --&gt;
+&lt;p&gt;Today's Date: {{ currentDate }}&lt;/p&gt;
+</code></pre>
+
+  <p>### 3️⃣ Run Your Angular App</p>
+  <pre><code>ng serve</code></pre>
+
+  <p>Now, open <code>http://localhost:4200/</code> in your browser.</p>
+
+  <h2>🎉 Browser Output</h2>
+
+  <p><strong>Here’s what you will see in the browser:</strong></p>
+
+  <div class="browser-output">
+    <h1>Welcome to Angular!</h1>
+    <img src="assets/angular-logo.png" alt="Angular Logo">
+    <p class="highlight">This text has dynamic styling!</p>
+    <p style="color: blue; background-color: lightgray;">
+      This text has a dynamically applied color and background!
+    </p>
+    <p>Today's Date: Thu Mar 06 2025</p>
+  </div>
+
+  <p><strong>WOW! 🎉 You did it! The dynamic data is working perfectly! 😃</strong></p>
+  <p>Now, you’ve successfully used:</p>
+  <ul>
+    <li><strong>Property Binding</strong> to display the image dynamically</li>
+    <li><strong>Class Binding</strong> to apply styling dynamically</li>
+    <li><strong>Style Binding</strong> to change text and background color dynamically</li>
+    <li><strong>Text Interpolation</strong> to display the current date dynamically</li>
+  </ul>
+
+  <p>🔥 <strong>You're rocking Angular!</strong> Keep exploring and building awesome apps! 🚀😁</p>
+</div>
+
+<div class="container">
+  <h1>Learning Angular</h1>
+  <h2>Event Binding in Angular</h2>
+
+  <p>Now that you've learned about property, class, and style binding, let's explore <strong>Event Binding</strong> in Angular.</p>
+
+  <p><strong>What is Event Binding?</strong></p>
+  <p>Event binding allows us to handle user actions (like clicks, key presses, mouse movements) by binding them to functions in our TypeScript file.</p>
+
+  <p>### 1️⃣ Setup in TypeScript File (<code>app.component.ts</code>)</p>
+
+  <pre><code>export class AppComponent &#123;
+    message = 'Click the button to see the magic! 🚀';
+
+    changeMessage() &#123;
+      this.message = 'Wow! You just clicked the button! 🎉';
+    &#125;
+  &#125;</code></pre>
+
+  <p>### 2️⃣ Update the HTML File (<code>app.component.html</code>)</p>
+
+  <p>Now, let's use event binding to trigger the function when the button is clicked:</p>
+
+  <pre><code ngNonBindable>
+&lt;h1&gt;{{ message }}&lt;/h1&gt;
+
+&lt;!-- Event Binding for Button Click --&gt;
+&lt;button (click)="changeMessage()"&gt;Click Me!&lt;/button&gt;
+</code></pre>
+
+  <p>### 3️⃣ Run Your Angular App</p>
+  <pre><code>ng serve</code></pre>
+
+  <p>Now, open <code>http://localhost:4200/</code> in your browser.</p>
+
+  <h2>🎉 Browser Output</h2>
+
+  <p><strong>Before Clicking the Button:</strong></p>
+
+  <div class="browser-output">
+    <h1>Click the button to see the magic! 🚀</h1>
+    <button>Click Me!</button>
+  </div>
+
+  <p><strong>After Clicking the Button:</strong> (The text updates dynamically!)</p>
+
+  <div class="browser-output">
+    <h1>Wow! You just clicked the button! 🎉</h1>
+    <button>Click Me!</button>
+  </div>
+
+  <p><strong>OH WOW! 🎉 The text changed instantly! That’s event binding in action! 😃</strong></p>
+  <p>Now, you’ve successfully used:</p>
+  <ul>
+    <li><strong>Event Binding</strong> to capture user interaction</li>
+    <li><strong>Function Execution</strong> to update the UI dynamically</li>
+    <li><strong>Text Interpolation</strong> to reflect changes in real-time</li>
+  </ul>
+
+  <p>🔥 <strong>You’re mastering Angular! Keep going, and soon you'll build amazing interactive apps! 🚀😁</strong></p>
+</div>
+
+
+<router-outlet />

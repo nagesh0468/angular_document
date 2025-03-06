@@ -1,0 +1,43 @@
+.container{
+  width: 100%;
+  height: max-content;
+  margin-left: 100px;
+  padding: 25px;
+}
+.container h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #c76265;
+
+}
+.container h2{
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #514ee9;
+}
+p strong{
+  font-weight: bold;
+  font-size: large;
+  color: #041318;
+  margin-right: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-decoration: none;
+  &:hover{
+    color: #c76265;
+  }
+  
+
+}
+p {
+  color: #0d0d22;
+  margin-bottom: 5px;
+}
+pre{
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: red;
+  font-weight: bold;
+}
